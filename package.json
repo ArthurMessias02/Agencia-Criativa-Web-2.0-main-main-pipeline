@@ -1,0 +1,22 @@
+{
+  "name": "agencia-criativa-web-2.0-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/estilos.scss css/estilos.css",
+    "lint": "echo lint ok",
+    "test": "echo test ok",
+    "build": "echo build ok"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "sass": "^1.97.3"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.18"
+  }
+}

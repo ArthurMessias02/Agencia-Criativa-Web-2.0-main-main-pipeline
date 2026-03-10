@@ -1,0 +1,22 @@
+@use 'variaveis' as *;
+
+// ================= MIXINS =================
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin botao-base {
+  display: inline-block;
+  padding: $spacing-md $spacing-lg;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+@mixin sombra-card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
