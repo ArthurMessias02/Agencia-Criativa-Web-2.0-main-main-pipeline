@@ -1,0 +1,79 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+// ================= HEADER =================
+
+.header {
+  background: $color-primary;
+  color: #fff;
+  padding: $spacing-md 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: $spacing-lg;
+    list-style: none;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+// ================= HOME =================
+
+.home {
+  background: linear-gradient(
+    rgba(10, 61, 98, 0.8),
+    rgba(10, 61, 98, 0.8)
+  ),
+  url("../img/banner.jpg") center/cover;
+
+  color: #fff;
+  text-align: center;
+  padding: $spacing-xl * 2;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-md;
+  }
+
+  &__subtitle {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+// ================= RESPONSIVIDADE =================
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  .about__content {
+    flex-direction: column;
+  }
+
+  .home {
+    padding: $spacing-xl;
+  }
+}

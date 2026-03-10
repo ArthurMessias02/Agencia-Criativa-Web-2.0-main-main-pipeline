@@ -1,0 +1,57 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+// ================= BOTÕES =================
+
+.btn {
+  @include botao-base;
+  background: $color-primary;
+  color: #fff;
+
+  &:hover {
+    background: $color-secondary;
+  }
+
+  &--secondary {
+    background: $color-secondary;
+
+    &:hover {
+      background: $color-primary;
+    }
+  }
+}
+
+// ================= CARDS =================
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: $spacing-lg;
+  @include sombra-card;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    color: $color-primary;
+    margin-bottom: $spacing-sm;
+  }
+}
+
+// ================= FORM =================
+
+.contact {
+  &__input,
+  &__textarea {
+    padding: $spacing-md;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}
