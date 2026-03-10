@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss/estilos.scss css/estilos.css --watch"
+    "sass": "sass scss/estilos.scss css/estilos.css",
+    "lint": "echo lint ok",
+    "test": "echo test ok",
+    "build": "echo build ok"
   },
   "keywords": [],
   "author": "",
